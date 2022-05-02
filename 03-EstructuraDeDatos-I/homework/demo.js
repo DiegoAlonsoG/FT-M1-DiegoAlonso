@@ -2,8 +2,8 @@ function Queue() {
     this.array = []
   }
   
-  Queue.prototype.enqueue = function (x) {
-    return this.array.push(x)
+  Queue.prototype.enqueue = function (...args) {
+    return this.array.push(...args)
   }
   
   Queue.prototype.dequeue = function () {
